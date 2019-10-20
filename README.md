@@ -1,1 +1,1 @@
-# chapter11-dailyjournal-part1
+# daily-journal
