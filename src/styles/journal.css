@@ -18,6 +18,6 @@ fieldset {
     justify-content: center;
 }
 
-.disabled {
+select:invalid {
     color: gray;
 }
