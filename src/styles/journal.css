@@ -17,3 +17,7 @@ fieldset {
     flex-direction: column;
     justify-content: center;
 }
+
+.disabled {
+    color: gray;
+}
