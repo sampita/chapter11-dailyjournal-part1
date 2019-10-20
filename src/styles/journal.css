@@ -9,11 +9,11 @@ form {
 
 fieldset {
     font-family: 'Roboto', sans-serif;
+    border: none;
 
 
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: none;
 }

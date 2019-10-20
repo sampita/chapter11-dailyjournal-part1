@@ -13,22 +13,27 @@
     <form action="">
         <fieldset class="flex-container">
             <label for="journalDate">Date of Entry:</label>
+            <br>
             <input type="date" name="journalDate" id="journalDate">
-            <br>
+            <br><br>
             <label for="conceptscovered">Concepts Covered:</label>
+            <br>
             <input type="text" name="conceptsCovered">
-            <br>
+            <br><br>
             <label for="journalEntry">Journal Entry:</label>
-            <textarea name="journalEntry" cols="88" rows="10"></textarea>
             <br>
+            <textarea name="journalEntry" cols="88" rows="10"></textarea>
+            <br><br>
             <label for="mood">Mood:</label>
+            <br>
             <select name="mood" id="mood">
                 <option value="confident">Feeling confident</option>
                 <option value="littleconfused">Only a little confused</option>
                 <option value="prettyconfused">Pretty confused</option>
                 <option value="lost">Utterly lost</option>
                 <option value="despair">In a pit of despair</option>
-            </select><br>    
+            </select>
+            <br><br>    
             <input type="submit" value="Record Thoughts">
         </fieldset>
     </form>
