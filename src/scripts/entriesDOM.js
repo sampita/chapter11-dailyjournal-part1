@@ -1,14 +1,18 @@
 //Purpose: This file manages what appears on the DOM
+import entryHTML from "./entryComponent.js"
 
-let entryLog = document.querySelector("#entryLog")
-let newJournalEntryHTML = ""
+
 
 //iterate through array of journal entries and add them to DOM
-const renderJournalEntriesToDom = (entries) => {
+const domEntries = {
+    renderJournalEntriesToDom (entries) {
+    let entryLog = document.querySelector("#entryLog")
+    let newJournalEntryHTML = ""
     entries.forEach(entry => {
-        newJournalEntryHTML += makeJournalEntryHTML(entry)
+        newJournalEntryHTML += entryHTML.makeJournalEntryHTML(entry)
         entryLog.innerHTML = newJournalEntryHTML
     })
+  }
 }
 
 
@@ -21,3 +25,5 @@ const renderJournalEntriesToDom = (entries) => {
             })
     });
 } */
+
+export default domEntries
