@@ -2,7 +2,8 @@
 
 
 //factory function to make HTML for journal entries
-const makeJournalEntryHTML = (journalEntries) => {
+const entryHTML = {
+makeJournalEntryHTML (journalEntries) {
     return `
     <h3>Date:</h3>
     <p>${journalEntries.date}</p> 
@@ -13,5 +14,6 @@ const makeJournalEntryHTML = (journalEntries) => {
     <h3>Mood:</h3>
     <p>${journalEntries.mood}</p>
     `
+  }
 }
-
+export default entryHTML
