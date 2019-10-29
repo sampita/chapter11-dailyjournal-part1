@@ -1,4 +1,4 @@
-h1 {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -7,10 +7,13 @@ form {
     border-radius: 8px;
 }
 
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
 fieldset {
     font-family: 'Roboto', sans-serif;
     border: none;
-
 
 .flex-container {
     display: flex;
