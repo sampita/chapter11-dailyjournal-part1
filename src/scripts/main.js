@@ -1,31 +1,10 @@
-const journalEntries = [
-    {
-    date: "10/18/2019",
-    concept: "Review of Book 2", 
-    entryText: "Today we reviewed what we learned throughout Book 2 and applied it towards making a recipe-searching webpage. This was in preparation for our second group project, where we'll be doing something similar encompassing JavaScript objects, manipulating the DOM, connecting APIS, and more",
-    mood: "Feeling confident"
-},
-    {
-    date: "10/21/2019",
-    concept: "Group Project 2", 
-    entryText: "Today we are going to start our second group project. I'm a little nervous. We were given no template for standard workflow when creating something from scratch, so hopefully my team will figure things out!",
-    mood: "A little confused"
-},
-    {
-    date: "10/28/2019",
-    concept: "JS Array Methods", 
-    entryText: "We covered array methods in JavaScript including .find, .map, and .reduce. We also covered importing/exporting JavaScript modules instead of linking to each one in the index.html. I actually got to preview this while watching my teammates do that very same thing during the NSS Hackathon this weekend! Getting to see it ahead of time definitely primed my brain, so now that Jisie went over it in class again I fully understand it",
-    mood: "Decent level of understanding"
-}]
-
-let entryLog = document.querySelector("#entryLog")
-
-const makeJournalHeading = (heading) => {
+/* const makeJournalHeading = (heading) => {
     return `
     <h1>Daily Journal</h1>
     `
-}
+} */
 
+//factory function to make HTML for journal entries
 const makeJournalEntryHTML = (journalEntries) => {
     return `
     <h3>Date:</h3>
@@ -39,32 +18,42 @@ const makeJournalEntryHTML = (journalEntries) => {
     `
 }
 
-// console.log(makeJournalEntryHTML)
-
-// const entryLog = []
-
-//iterate through array of journal entries and add them to DOM
+let entryLog = document.querySelector("#entryLog")
 let newJournalEntryHTML = ""
 
-const renderJournalEntries = (entries) => {
+// console.log(newJournalEntryHTML)
+
+//iterate through array of journal entries and add them to DOM
+const renderJournalEntriesToDom = (entries) => {
     entries.forEach(entry => {
         newJournalEntryHTML += makeJournalEntryHTML(entry)
         entryLog.innerHTML = newJournalEntryHTML
     })
 }
 
-renderJournalEntries(journalEntries)
+//get data from JSON and turn into usable information
+const accessJournalEntries = () => {getDataFromAPI()
+    .then(entries => {
+        console.log(entries)
+        //return entry information
+       entries.forEach(entry => {
+            const date = entry.date
+            const concept = entry.concept
+            const entryText = entry.entryText
+            const mood = entry.mood
+            renderJournalEntriesToDom(entry)
+            })
+    });
+}
+// console.log(accessJournalEntries)
 
-console.log(newJournalEntryHTML)
+accessJournalEntries()
 
-/* const addEntryToLog = (journalEntries) => {
-    for (let i=0; i < journalEntries.length; i++)
-    entryLog.push(journalEntry)
-    console.log(entryLog)
 
-    entryLog += entryLog
-} */
 
-// console.log(entryLog)
 
-// addEntryToLog();
+
+// renderJournalEntries(journalEntries)
+
+// console.log(newJournalEntryHTML)
+
