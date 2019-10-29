@@ -10,4 +10,8 @@ import domEntries from "./entriesDOM.js"
 data.getJournalData()
 .then(entries => domEntries.renderJournalEntriesToDom(entries))
 
+const submitButton = document.getElementById("submitButton")
+
+
+
 
