@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Daily Journal</h1>
-    <form action="">
+    <form name ="journalForm" action="" onsubmit="return validateForm()">
         <fieldset class="flex-container">
             <!-- TODO: switch <br>s to margin or padding -->
             <label for="journalDate">Date of Entry:</label>
@@ -23,11 +23,11 @@
             <br><br>
             <label for="journalEntry">Journal Entry:</label>
             <br>
-            <textarea name="journalEntry" cols="80" rows="10" id="entryInput" placeholder="What's on your mind today?"></textarea>
+            <textarea name="journalEntry" cols="80" rows="10" id="entryInput" placeholder="What's on your mind today?" ></textarea>
             <br><br>
             <label for="mood">Mood:</label>
             <br>
-            <select required name="mood" id="moodInput">
+            <select name="mood" id="moodInput">
                 <option value=""disabled selected hidden class= "disabled">Select your mood</option>
                 <option value="Feeling confident">Feeling confident</option>
                 <option value="Decent level of understanding">Decent level of understanding</option>
