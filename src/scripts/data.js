@@ -7,7 +7,7 @@ const data = {
             .then(results => results.json())
     },
 
-    postToApi(newJournalEntry) {
+    saveEntryToApi(newJournalEntry) {
         return fetch("http://localhost:3000/entries", {
             method: "POST",
             headers: {

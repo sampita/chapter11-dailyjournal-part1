@@ -37,10 +37,11 @@ submitButton.addEventListener("click", ()=>{
 
     const newJournalEntry = createNewJournalEntry(dateInput, conceptInput, entryInput, moodInput)
 
-    data.postToApi(newJournalEntry).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
-    }
+    data.saveEntryToApi(newJournalEntry).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
+    .then(document.getElementById("journalForm").reset());}
 
     else {window.alert("Please fill out the form completely")}
+
   }
 )
 //form validation
