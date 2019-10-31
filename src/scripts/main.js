@@ -9,6 +9,10 @@ data.getJournalData()
 const submitButton = document.getElementById("submitButton")
 
 //when submit button is clicked, create new journal entry
-submitButton.addEventListener("click", events.saveEntry)
+submitButton.addEventListener("submit", events.saveEntry)
+
+events.addRadioButtonEventListener()
+
+
 
 

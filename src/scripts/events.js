@@ -8,13 +8,38 @@ saveEntry() {
     const entryText = document.getElementById("entryInput").value
     const mood = document.getElementById("moodInput").value
 
-    if(dateInput !== "" && conceptInput !== "" && entryInput !== "" && moodInput !== "") {
-
     data.saveEntryToApi({date, concept, entryText, mood}).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
-    .then(document.getElementById("journalForm").reset());}
+    .then(document.getElementById("journalForm").reset());},
 
-    else {window.alert("Please fill out the form completely")}
-    }
-}    
+filterEventsByMood() {
+    let moodSelection = event.target.value
+    //do api call for new array on click
+    data.getJournalData().then((entries) => {
+        // console.log(entries)
+        const filterMood = entries.filter(entryObject => {
+            //if mood matches up with moodSelection, return entry
+            let moodMatch = false
+
+            if (entryObject.mood === moodSelection) {
+                moodMatch = true
+            }
+
+            return moodMatch
+        })
+        domEntries.renderJournalEntriesToDom(filterMood)
+    })
+        
+        // (domEntries.renderJournalEntriesToDom)
+    },
+
+addRadioButtonEventListener() {
+    {
+        const radioButtons = document.getElementsByName("mood")
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener("click", this.filterEventsByMood)
+        }
+    )}
+    }   
+  }
 
 export default events
