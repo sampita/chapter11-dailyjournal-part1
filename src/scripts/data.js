@@ -15,7 +15,7 @@ const data = {
             },
             body: JSON.stringify(newJournalEntry)
         })
-    }
+    },
 }
 
 export default data
