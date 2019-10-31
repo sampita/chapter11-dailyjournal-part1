@@ -16,14 +16,4 @@ const domEntries = {
 }
 
 
-//take JSON data and turn into usable information
-/* const accessJournalEntries = () => {getJournalData()
-    .then(entries => {
-        // console.log(entries)
-       entries.forEach(entry => {
-            renderJournalEntriesToDom(entry)
-            })
-    });
-} */
-
 export default domEntries

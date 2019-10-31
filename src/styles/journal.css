@@ -9,18 +9,31 @@ h1{
 
 form {
     margin: 90px 20px 0 20px;
-    background-color: white;
-    border: 1px solid lightsteelblue;
-    border-radius: 8px;
-}
-
-input {
-    font-family: 'Roboto', sans-serif;
 }
 
 fieldset {
     font-family: 'Roboto', sans-serif;
     border: none;
+}
+
+fieldset.moodFilter {
+    margin: 20px 20px 0 20px;
+}
+
+form, fieldset.moodFilter {
+    background-color: white;
+    border: 1px solid lightsteelblue;
+    border-radius: 8px;
+}
+
+
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+textarea {
+    width: 95%;
 }
 
 .blackBar{
@@ -33,18 +46,27 @@ fieldset {
 
 }
 
-.flex-container {
+.createEntryForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+fieldset.moodFilterButtons {
+    display: block;
+}
 select:invalid {
     color: gray;
 }
 
 #submitButton {
-    margin: 5px 20px
+    background-color: #39b85b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+    margin: 20px 20px;
+
 }
 
 #entryInput {
