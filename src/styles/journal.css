@@ -23,6 +23,10 @@ fieldset {
     border: none;
 }
 
+textarea {
+    width: 95%;
+}
+
 .blackBar{
     position: fixed;
     top: 0;
@@ -39,6 +43,9 @@ fieldset {
     justify-content: center;
 }
 
+fieldset.moodFilterButtons {
+    display: block;
+}
 select:invalid {
     color: gray;
 }

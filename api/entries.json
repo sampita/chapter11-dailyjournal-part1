@@ -76,6 +76,13 @@
       "entryText": "I love my family, my boyfriend, and my dog",
       "mood": "Feeling confident",
       "id": 11
+    },
+    {
+      "date": "2019-10-31",
+      "concept": "Methods and Event Listeners",
+      "entryText": "Today we have a lot of lab time to work on our Daily Journal exercises. These use methods and event listeners together to add more functionality to our journals.",
+      "mood": "Decent level of understanding",
+      "id": 12
     }
   ]
 }
