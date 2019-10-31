@@ -13,14 +13,14 @@ form {
 
 fieldset {
     font-family: 'Roboto', sans-serif;
-    border: none;
+    /* border: none; */
 }
 
 fieldset.moodFilter {
     margin: 20px 20px 0 20px;
 }
 
-form, fieldset.moodFilter {
+fieldset {
     background-color: white;
     border: 1px solid lightsteelblue;
     border-radius: 8px;
@@ -47,9 +47,9 @@ textarea {
 }
 
 .createEntryForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
 fieldset.moodFilterButtons {

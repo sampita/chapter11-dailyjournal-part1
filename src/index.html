@@ -20,20 +20,20 @@
             <!-- TODO: switch <br>s to margin or padding -->
             <label for="journalDate">Date:</label>
             <br>
-            <input type="date" name="journalDate" id="dateInput">
+            <input type="date" name="journalDate" id="dateInput" required>
             <br><br>
             <label for="conceptscovered">Concepts Covered:</label>
             <br>
-            <input type="text" name="conceptsCovered" id="conceptInput">
+            <input type="text" name="conceptsCovered" id="conceptInput" required>
             <br><br>
             <label for="journalEntry">Journal Entry:</label>
             <br>
             <textarea name="journalEntry" rows="10" id="entryInput"
-                placeholder="What's on your mind today? 💭"></textarea>
+                placeholder="What's on your mind today? 💭" required></textarea>
             <br><br>
             <label for="mood">Mood:</label>
             <br>
-            <select name="mood" id="moodInput">
+            <select name="mood" id="moodInput" required>
                 <option value="" disabled selected hidden class="disabled">Select your mood</option>
                 <option value="Feeling confident">😎 Feeling confident</option>
                 <option value="Decent level of understanding">🙂 Decent level of understanding</option>
@@ -43,30 +43,30 @@
             </select>
             <br><br>
         </fieldset>
+        <button id="submitButton">Record your thoughts</button>
     </form>
-    <button id="submitButton">Record your thoughts</button>
 
     <!-- Filter by Mood  -->
     <fieldset class="moodFilter">
         <legend>Filter journal entries by mood:</legend>
         <div class="moodFilterButtons">     
-        <input type="radio" id="confidentSelector" name="feeling" value="Feeling confident">
+        <input type="radio" id="confidentSelector" name="mood" value="Feeling confident">
         <label for="Feeling confident">😎 Feeling confident</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="decentSelector" name="feeling" value="Decent level of understanding" >
+        <input type="radio" id="decentSelector" name="mood" value="Decent level of understanding" >
         <label for="Decent level of understanding">🙂 Decent level of understanding</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="confusedSelector" name="feeling" value="A little confused" >
+        <input type="radio" id="confusedSelector" name="mood" value="A little confused" >
         <label for="A little confused">😐 A little confused</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="lostSelector" name="feeling" value="Utterly lost" >
+        <input type="radio" id="lostSelector" name="mood" value="Utterly lost" >
         <label for="Utterly lost">😫 Utterly lost</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="despairSelector" name="feeling" value="In a pit of despair" >
+        <input type="radio" id="despairSelector" name="mood" value="In a pit of despair" >
         <label for="In a pit of despair">🔥 In a pit of despair</label>
         </div>
     </fieldset>

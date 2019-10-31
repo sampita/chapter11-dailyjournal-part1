@@ -8,13 +8,18 @@ saveEntry() {
     const entryText = document.getElementById("entryInput").value
     const mood = document.getElementById("moodInput").value
 
-    if(dateInput !== "" && conceptInput !== "" && entryInput !== "" && moodInput !== "") {
-
     data.saveEntryToApi({date, concept, entryText, mood}).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
     .then(document.getElementById("journalForm").reset());}
 
-    else {window.alert("Please fill out the form completely")}
     }
-}    
+
+/* addFilterEvent () 
+    {const radioButtons = document.getElementsByName("mood")
+        radioButtons.forEach addEventListener("click", event => {
+        const mood = event.target.value
+        //do api call for new array
+    })
+    } */
+   
 
 export default events
