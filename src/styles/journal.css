@@ -1,9 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #edf5f2;
+}
+
+h1{
+    color: white;
 }
 
 form {
-    background-color: #edf5f2;
+    margin: 90px 20px 0 20px;
+    background-color: white;
+    border: 1px solid lightsteelblue;
     border-radius: 8px;
 }
 
@@ -14,6 +21,17 @@ input {
 fieldset {
     font-family: 'Roboto', sans-serif;
     border: none;
+}
+
+.blackBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1a1c1a;
+
+}
 
 .flex-container {
     display: flex;
@@ -23,4 +41,12 @@ fieldset {
 
 select:invalid {
     color: gray;
+}
+
+#submitButton {
+    margin: 5px 20px
+}
+
+#entryInput {
+    box-sizing: border-box;
 }
