@@ -83,6 +83,20 @@
       "entryText": "Today we have a lot of lab time to work on our Daily Journal exercises. These use methods and event listeners together to add more functionality to our journals.",
       "mood": "Decent level of understanding",
       "id": 12
+    },
+    {
+      "date": "2019-10-31",
+      "concept": "ohell",
+      "entryText": "oh yay",
+      "mood": "Feeling confident",
+      "id": 13
+    },
+    {
+      "date": "2019-10-31",
+      "concept": "hello",
+      "entryText": "happy halloween",
+      "mood": "Decent level of understanding",
+      "id": 14
     }
   ]
 }

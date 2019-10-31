@@ -10,6 +10,7 @@ h1{
 form {
     margin: 90px 20px 0 20px;
 }
+
 fieldset {
     font-family: 'Roboto', sans-serif;
     border: none;
@@ -45,7 +46,7 @@ textarea {
 
 }
 
-.flex-container {
+.createEntryForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +65,7 @@ select:invalid {
     border: none;
     border-radius: 7px;
     height: 30px;
-    margin: 20px 20px
+    margin: 20px 20px;
 
 }
 
