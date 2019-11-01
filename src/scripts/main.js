@@ -10,6 +10,7 @@ makeJournalEntryForm()
 data.getJournalData()
     .then(entries => domEntries.renderJournalEntriesToDom(entries))
     .then(events.addRadioButtonEventListener())
+    .then(events.editButtonHandler())
     .then(events.deleteButtonHandler())
 
 

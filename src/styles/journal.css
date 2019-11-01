@@ -5,6 +5,8 @@ body {
 
 h1{
     color: white;
+    text-align: left;
+    margin: 10px 0px 0px 20px;
 }
 
 form {
@@ -69,15 +71,32 @@ select:invalid {
     border-radius: 7px;
     height: 30px;
     margin: 20px 20px;
+    font-size: 14px;
+    /* box-shadow: 1px 1px 10px 1px #aaaaaa; */
 
+}
+
+#submitButton:hover {
+    background-color: #38a956;
+    cursor: pointer;
+    box-shadow: -1px -1px 10px 3px  #aaaaaa;
 }
 
 #entryInput {
     box-sizing: border-box;
 }
 
+.fa-trash-alt, .fa-pencil-alt {
+    color: darkslategray;
+    margin-right: 10px;
+}
+
 .fa-trash-alt:hover {
+    color: #e64229;
+    cursor: pointer;   
+}
+
+.fa-pencil-alt:hover {
     color: #39b85b;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }

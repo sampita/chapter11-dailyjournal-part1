@@ -2,7 +2,7 @@
   "entries": [
     {
       "id": 3,
-      "date": "10/28/2019",
+      "date": "2019-10-28",
       "concept": "JS Array Methods",
       "entryText": "We covered array methods in JavaScript including .find, .map, and .reduce. We also covered importing/exporting JavaScript modules instead of linking to each one in the index.html. I actually got to preview this while watching my teammates do that very same thing during the NSS Hackathon this weekend! Getting to see it ahead of time definitely primed my brain, so now that Jisie went over it in class again I fully understand it",
       "mood": "🙂 Decent level of understanding"

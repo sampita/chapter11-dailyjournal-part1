@@ -51,16 +51,29 @@ deleteButtonHandler() {
     entryLog.addEventListener("click", event => {
         if (event.target.id.startsWith("deleteButton--")) {
         // Extract entry id from button id attribute
-        const entryToDelete = event.target.id.split("--")[1]
+            const entryToDelete = event.target.id.split("--")[1]
 
         // Invoke the delete method, get all recipes 
-        data.deleteEntry(entryToDelete)
-            .then(data.getJournalData)
-            .then(domEntries.renderJournalEntriesToDom)
+            data.deleteEntry(entryToDelete)
+                .then(data.getJournalData)
+                .then(domEntries.renderJournalEntriesToDom)
         }
     })
 
-}    
+},
+
+editButtonHandler() {
+    const entryLog = document.querySelector("#entryLog")
+    entryLog.addEventListener("click", event => {
+        if (event.target.id.startsWith("editButton--")) 
+          {
+            const entryToEdit = event.target.id.split("--")[1]
+
+            //Get the specific entry from API and populate form fields
+            data.updateFormFields(entryToEdit)
+        }
+    })
+}
 
   }
 
