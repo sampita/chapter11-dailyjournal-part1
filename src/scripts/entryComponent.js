@@ -14,6 +14,7 @@ makeJournalEntryHTML (journalEntries) {
     <p>${journalEntries.entryText}</p>
     <h3>Mood:</h3>
     <p>${journalEntries.mood}</p>
+    <i class="fas fa-pencil-alt" id="editButton--${journalEntries.id}"></i>
     <i class="fas fa-trash-alt" id="deleteButton--${journalEntries.id}"></i>
     </section>
     `

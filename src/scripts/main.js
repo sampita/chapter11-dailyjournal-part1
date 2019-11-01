@@ -6,10 +6,12 @@ import makeJournalEntryForm from "./formMaker.js"
 //TODO: if no journal matches are returned, return N/A
 
 makeJournalEntryForm()
+events.saveButtonHandler()
 
 data.getJournalData()
     .then(entries => domEntries.renderJournalEntriesToDom(entries))
     .then(events.addRadioButtonEventListener())
+    .then(events.editButtonHandler())
     .then(events.deleteButtonHandler())
 
 

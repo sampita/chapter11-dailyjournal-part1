@@ -7,6 +7,7 @@ export default function makeJournalEntryForm() {
     <form name="journalForm" action="" id="journalForm">
     <fieldset class="createEntryForm">
     <legend>Create new journal entry:</legend>
+        <input type="hidden" id="entryID" value="">
         <div class="formFields">
         <label for="journalDate">Date:</label>
         <input type="date" name="journalDate" id="dateInput" required>
@@ -36,9 +37,4 @@ export default function makeJournalEntryForm() {
 </form>`
 journalEntryForm.innerHTML = journalEntryFormHTML
 
-//reference to submit button
-const submitButton = document.getElementById("submitButton")
-
-//event listener: when submit button is clicked, save new journal entry
-submitButton.addEventListener("click", events.saveEntry)
 }

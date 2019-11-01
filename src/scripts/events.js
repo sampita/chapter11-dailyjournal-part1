@@ -3,6 +3,9 @@ import domEntries from "./entriesDOM.js"
 
 
 const events = {
+    /* if id is not empty then PUT
+    
+    else if id is empty DO THESE THINGS */
 saveEntry() {
     event.preventDefault()    
     const date = document.getElementById("dateInput").value
@@ -10,8 +13,18 @@ saveEntry() {
     const entryText = document.getElementById("entryInput").value
     const mood = document.getElementById("moodInput").value
 
+
     data.saveEntryToApi({date, concept, entryText, mood}).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
-    .then(document.getElementById("journalForm").reset());},
+    .then(document.getElementById("journalForm").reset());
+    },
+
+saveButtonHandler() {
+    //reference to submit button
+    const submitButton = document.getElementById("submitButton")
+
+    //event listener: when submit button is clicked, save new journal entry
+    submitButton.addEventListener("click", events.saveEntry)
+}, 
 
 filterEventsByMood() {
     let moodSelection = event.target.value
@@ -51,16 +64,29 @@ deleteButtonHandler() {
     entryLog.addEventListener("click", event => {
         if (event.target.id.startsWith("deleteButton--")) {
         // Extract entry id from button id attribute
-        const entryToDelete = event.target.id.split("--")[1]
+            const entryToDelete = event.target.id.split("--")[1]
 
         // Invoke the delete method, get all recipes 
-        data.deleteEntry(entryToDelete)
-            .then(data.getJournalData)
-            .then(domEntries.renderJournalEntriesToDom)
+            data.deleteEntry(entryToDelete)
+                .then(data.getJournalData)
+                .then(domEntries.renderJournalEntriesToDom)
         }
     })
 
-}    
+},
+
+editButtonHandler() {
+    const entryLog = document.querySelector("#entryLog")
+    entryLog.addEventListener("click", event => {
+        if (event.target.id.startsWith("editButton--")) 
+          {
+            const entryToEdit = event.target.id.split("--")[1]
+
+            //Get the specific entry from API and populate form fields
+            data.updateFormFields(entryToEdit)
+        }
+    })
+}
 
   }
 
