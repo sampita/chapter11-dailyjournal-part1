@@ -3,12 +3,14 @@ import domEntries from "./entriesDOM.js"
 import events from "./events.js"
 import makeJournalEntryForm from "./formMaker.js"
 
+//TODO: if no journal matches are returned, return N/A
+
 makeJournalEntryForm()
 
 data.getJournalData()
-.then(entries => domEntries.renderJournalEntriesToDom(entries))
-
-events.addRadioButtonEventListener()
+    .then(entries => domEntries.renderJournalEntriesToDom(entries))
+    .then(events.addRadioButtonEventListener())
+    .then(events.deleteButtonHandler())
 
 
 

@@ -16,6 +16,15 @@ const data = {
             body: JSON.stringify(newJournalEntry)
         })
     },
+
+    deleteEntry(entryID) {
+        // console.log(entryID)
+        return fetch(`http://localhost:3000/entries/${entryID}`, {
+            method: "DELETE"
+        })
+            .then(response => response.json())
+    }
+
 }
 
 export default data

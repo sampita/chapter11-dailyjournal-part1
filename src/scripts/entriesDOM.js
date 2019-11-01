@@ -8,12 +8,12 @@ const entryLog = document.querySelector("#entryLog")
 const domEntries = {
     renderJournalEntriesToDom (entries) {
     let newJournalEntryHTML = ""
+    entryLog.innerHTML = ""
     entries.forEach(entry => {
         newJournalEntryHTML += entryHTML.makeJournalEntryHTML(entry)
         entryLog.innerHTML = newJournalEntryHTML
     })
   }
 }
-
 
 export default domEntries

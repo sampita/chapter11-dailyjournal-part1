@@ -1,102 +1,74 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "10/18/2019",
-      "concept": "Review of Book 2",
-      "entryText": "Today we reviewed what we learned throughout Book 2 and applied it towards making a recipe-searching webpage. This was in preparation for our second group project, where we'll be doing something similar encompassing JavaScript objects, manipulating the DOM, connecting APIS, and more",
-      "mood": "Feeling confident"
-    },
-    {
-      "id": 2,
-      "date": "10/21/2019",
-      "concept": "Group Project 2",
-      "entryText": "Today we are going to start our second group project. I'm a little nervous. We were given no template for standard workflow when creating something from scratch, so hopefully my team will figure things out!",
-      "mood": "A little confused"
-    },
-    {
       "id": 3,
       "date": "10/28/2019",
       "concept": "JS Array Methods",
       "entryText": "We covered array methods in JavaScript including .find, .map, and .reduce. We also covered importing/exporting JavaScript modules instead of linking to each one in the index.html. I actually got to preview this while watching my teammates do that very same thing during the NSS Hackathon this weekend! Getting to see it ahead of time definitely primed my brain, so now that Jisie went over it in class again I fully understand it",
-      "mood": "Decent level of understanding"
+      "mood": "🙂 Decent level of understanding"
     },
     {
       "date": "2019-10-30",
       "concept": "POST",
       "entryText": "This is a test",
-      "mood": "littleconfused",
+      "mood": "😐 A little confused",
       "id": 4
-    },
-    {
-      "date": "2019-10-07",
-      "concept": "POST",
-      "entryText": "Steve is showing us how to use POST",
-      "mood": "A little confused",
-      "id": 5
     },
     {
       "date": "2019-10-31",
       "concept": "Test",
       "entryText": "Testing testing 123",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 6
     },
     {
       "date": "2019-10-31",
       "concept": "Test",
       "entryText": "Testing testing 123",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 7
     },
     {
       "date": "2019-10-31",
       "concept": "trey rocks",
       "entryText": "\\m/",
-      "mood": "In a pit of despair",
+      "mood": "🔥 In a pit of despair",
       "id": 8
     },
     {
       "date": "2019-10-31",
       "concept": "dogs",
       "entryText": "I learned dogs are cute",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 9
     },
     {
       "date": "2019-10-31",
       "concept": "POST",
       "entryText": "I like post-its, posters, and postmates",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 10
     },
     {
       "date": "2019-10-09",
       "concept": "asdfdsadf",
       "entryText": "I love my family, my boyfriend, and my dog",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 11
     },
     {
       "date": "2019-10-31",
       "concept": "Methods and Event Listeners",
       "entryText": "Today we have a lot of lab time to work on our Daily Journal exercises. These use methods and event listeners together to add more functionality to our journals.",
-      "mood": "Decent level of understanding",
+      "mood": "🙂 Decent level of understanding",
       "id": 12
     },
     {
       "date": "2019-10-31",
       "concept": "ohell",
       "entryText": "oh yay",
-      "mood": "Feeling confident",
+      "mood": "😎 Feeling confident",
       "id": 13
-    },
-    {
-      "date": "2019-10-31",
-      "concept": "hello",
-      "entryText": "happy halloween",
-      "mood": "Decent level of understanding",
-      "id": 14
     },
     {
       "date": "2019-11-05",
