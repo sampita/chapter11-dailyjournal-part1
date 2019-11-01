@@ -5,6 +5,7 @@
 const entryHTML = {
 makeJournalEntryHTML (journalEntries) {
     return `
+    <section class="singleEntry">
     <h3>Date:</h3>
     <p>${journalEntries.date}</p> 
     <h3>Concept:</h3>
@@ -13,6 +14,8 @@ makeJournalEntryHTML (journalEntries) {
     <p>${journalEntries.entryText}</p>
     <h3>Mood:</h3>
     <p>${journalEntries.mood}</p>
+    <button id="deleteButton--${journalEntries.id}">Delete</button>
+    </section>
     `
   }
 }

@@ -17,16 +17,22 @@ form {
 
 fieldset {
     font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: 1px solid lightsteelblue;
+    border-radius: 8px;
+}
+
+.singleEntry {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dfeaf0;
+    border: 1px solid lightsteelblue;
+    border-radius: 8px;
+    margin: 20px 20px 0 20px;
+    padding: 10px 20px;
 }
 
 fieldset.moodFilter {
     margin: 20px 20px 0 20px;
-}
-
-fieldset {
-    background-color: white;
-    border: 1px solid lightsteelblue;
-    border-radius: 8px;
 }
 
 
@@ -47,12 +53,6 @@ textarea {
     height: 60px;
     background-color: #1a1c1a;
 
-}
-
-.createEntryForm {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
 }
 
 fieldset.moodFilterButtons {

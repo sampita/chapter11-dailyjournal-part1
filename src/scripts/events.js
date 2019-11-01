@@ -3,7 +3,8 @@ import domEntries from "./entriesDOM.js"
 
 
 const events = {
-saveEntry() {    
+saveEntry() {
+    event.preventDefault()    
     const date = document.getElementById("dateInput").value
     const concept = document.getElementById("conceptInput").value
     const entryText = document.getElementById("entryInput").value
@@ -24,13 +25,16 @@ filterEventsByMood() {
             if (entryObject.mood === moodSelection) {
                 moodMatch = true
             }
-
             return moodMatch
         })
-        domEntries.renderJournalEntriesToDom(filterMood)
-    })
-        
-        // (domEntries.renderJournalEntriesToDom)
+        if (filterMood.length === 0) {
+            const entryLog = document.querySelector("#entryLog")
+            entryLog.innerHTML = `
+            <section class="singleEntry">No entries found</section>
+            `}
+        else {
+        domEntries.renderJournalEntriesToDom(filterMood)}
+      })
     },
 
 addRadioButtonEventListener() {
@@ -40,7 +44,24 @@ addRadioButtonEventListener() {
             radioButton.addEventListener("click", this.filterEventsByMood)
         }
     )}
-    }   
+    },
+
+deleteButtonHandler() {
+    const entryLog = document.querySelector("#entryLog")
+    entryLog.addEventListener("click", event => {
+        if (event.target.id.startsWith("deleteButton--")) {
+        // Extract entry id from button id attribute
+        const entryToDelete = event.target.id.split("--")[1]
+
+        // Invoke the delete method, get all recipes 
+        data.deleteEntry(entryToDelete)
+            .then(data.getJournalData)
+            .then(domEntries.renderJournalEntriesToDom)
+        }
+    })
+
+}    
+
   }
 
 export default events
