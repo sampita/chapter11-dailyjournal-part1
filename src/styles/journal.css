@@ -75,3 +75,9 @@ select:invalid {
 #entryInput {
     box-sizing: border-box;
 }
+
+.fa-trash-alt:hover {
+    color: #39b85b;
+    cursor: pointer;
+    
+}

@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "id": 2,
-      "date": "10/21/2019",
-      "concept": "Group Project 2",
-      "entryText": "Today we are going to start our second group project. I'm a little nervous. We were given no template for standard workflow when creating something from scratch, so hopefully my team will figure things out!",
-      "mood": "😐 A little confused"
-    },
-    {
       "id": 3,
       "date": "10/28/2019",
       "concept": "JS Array Methods",
@@ -78,25 +71,11 @@
       "id": 13
     },
     {
-      "date": "2019-10-31",
-      "concept": "hello",
-      "entryText": "happy halloween",
-      "mood": "🙂 Decent level of understanding",
-      "id": 14
-    },
-    {
       "date": "2019-11-05",
       "concept": "Delete Button",
       "entryText": "We're working on getting a functional delete button on our Daily Journals, but first I'm cleaning up my code and organizing it into more modules.",
       "mood": "🙂 Decent level of understanding",
       "id": 15
-    },
-    {
-      "date": "2019-11-13",
-      "concept": "bladfklsjalf",
-      "entryText": "ajdfkjklfdjsalkjdksf",
-      "mood": "😐 A little confused",
-      "id": 19
     }
   ]
 }

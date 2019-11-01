@@ -14,9 +14,9 @@ makeJournalEntryHTML (journalEntries) {
     <p>${journalEntries.entryText}</p>
     <h3>Mood:</h3>
     <p>${journalEntries.mood}</p>
-    <button id="deleteButton--${journalEntries.id}">Delete</button>
+    <i class="fas fa-trash-alt" id="deleteButton--${journalEntries.id}"></i>
     </section>
     `
-  }
+}
 }
 export default entryHTML
