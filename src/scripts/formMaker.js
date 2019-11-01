@@ -37,9 +37,4 @@ export default function makeJournalEntryForm() {
 </form>`
 journalEntryForm.innerHTML = journalEntryFormHTML
 
-//reference to submit button
-const submitButton = document.getElementById("submitButton")
-
-//event listener: when submit button is clicked, save new journal entry
-submitButton.addEventListener("click", events.saveEntry)
 }

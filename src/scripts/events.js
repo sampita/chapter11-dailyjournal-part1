@@ -3,6 +3,9 @@ import domEntries from "./entriesDOM.js"
 
 
 const events = {
+    /* if id is not empty then PUT
+    
+    else if id is empty DO THESE THINGS */
 saveEntry() {
     event.preventDefault()    
     const date = document.getElementById("dateInput").value
@@ -10,8 +13,18 @@ saveEntry() {
     const entryText = document.getElementById("entryInput").value
     const mood = document.getElementById("moodInput").value
 
+
     data.saveEntryToApi({date, concept, entryText, mood}).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
-    .then(document.getElementById("journalForm").reset());},
+    .then(document.getElementById("journalForm").reset());
+    },
+
+saveButtonHandler() {
+    //reference to submit button
+    const submitButton = document.getElementById("submitButton")
+
+    //event listener: when submit button is clicked, save new journal entry
+    submitButton.addEventListener("click", events.saveEntry)
+}, 
 
 filterEventsByMood() {
     let moodSelection = event.target.value
