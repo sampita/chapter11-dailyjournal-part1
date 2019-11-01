@@ -97,6 +97,13 @@
       "entryText": "happy halloween",
       "mood": "Decent level of understanding",
       "id": 14
+    },
+    {
+      "date": "2019-11-05",
+      "concept": "Delete Button",
+      "entryText": "We're working on getting a functional delete button on our Daily Journals, but first I'm cleaning up my code and organizing it into more modules.",
+      "mood": "🙂 Decent level of understanding",
+      "id": 15
     }
   ]
 }

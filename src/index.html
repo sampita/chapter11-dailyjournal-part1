@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/3bd28f4039.js" crossorigin="anonymous"></script>
+    <!-- Google Font  -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap" rel="stylesheet">
+    <!-- CSS Style Sheet  -->
     <link rel="stylesheet" href="styles/journal.css">
 </head>
 
@@ -14,59 +18,30 @@
     <div class="blackBar">
         <h1>Daily Journal</h1>
     </div>
-    <form name="journalForm" action="" id="journalForm">
-        <fieldset class="createEntryForm">
-        <legend>Create new journal entry:</legend>
-            <!-- TODO: switch <br>s to margin or padding -->
-            <label for="journalDate">Date:</label>
-            <br>
-            <input type="date" name="journalDate" id="dateInput" required>
-            <br><br>
-            <label for="conceptscovered">Concepts Covered:</label>
-            <br>
-            <input type="text" name="conceptsCovered" id="conceptInput" required>
-            <br><br>
-            <label for="journalEntry">Journal Entry:</label>
-            <br>
-            <textarea name="journalEntry" rows="10" id="entryInput"
-                placeholder="What's on your mind today? 💭" required></textarea>
-            <br><br>
-            <label for="mood">Mood:</label>
-            <br>
-            <select name="mood" id="moodInput" required>
-                <option value="" disabled selected hidden class="disabled">Select your mood</option>
-                <option value="Feeling confident">😎 Feeling confident</option>
-                <option value="Decent level of understanding">🙂 Decent level of understanding</option>
-                <option value="A little confused">😐 A little confused</option>
-                <option value="Utterly lost">😫 Utterly lost</option>
-                <option value="In a pit of despair">🔥 In a pit of despair</option>
-            </select>
-            <br><br>
-        </fieldset>
-        <button id="submitButton">Record your thoughts</button>
-    </form>
+   
+    <main id="journalEntryForm"></main>
 
     <!-- Filter by Mood  -->
     <fieldset class="moodFilter">
         <legend>Filter journal entries by mood:</legend>
         <div class="moodFilterButtons">     
-        <input type="radio" id="confidentSelector" name="mood" value="Feeling confident">
+        <input type="radio" id="confidentSelector" name="mood" value="😎 Feeling confident">
         <label for="Feeling confident">😎 Feeling confident</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="decentSelector" name="mood" value="Decent level of understanding" >
+        <input type="radio" id="decentSelector" name="mood" value="🙂 Decent level of understanding" >
         <label for="Decent level of understanding">🙂 Decent level of understanding</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="confusedSelector" name="mood" value="A little confused" >
+        <input type="radio" id="confusedSelector" name="mood" value="😐 A little confused" >
         <label for="A little confused">😐 A little confused</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="lostSelector" name="mood" value="Utterly lost" >
+        <input type="radio" id="lostSelector" name="mood" value="😫 Utterly lost" >
         <label for="Utterly lost">😫 Utterly lost</label>
         </div>
         <div class="moodFilterButtons"> 
-        <input type="radio" id="despairSelector" name="mood" value="In a pit of despair" >
+        <input type="radio" id="despairSelector" name="mood" value="🔥 In a pit of despair" >
         <label for="In a pit of despair">🔥 In a pit of despair</label>
         </div>
     </fieldset>
