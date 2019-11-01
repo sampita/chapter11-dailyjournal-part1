@@ -11,9 +11,12 @@ form {
     margin: 90px 20px 0 20px;
 }
 
+.formFields {
+    margin: 20px 5px;
+}
+
 fieldset {
     font-family: 'Roboto', sans-serif;
-    /* border: none; */
 }
 
 fieldset.moodFilter {

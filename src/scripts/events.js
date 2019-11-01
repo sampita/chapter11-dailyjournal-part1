@@ -1,6 +1,7 @@
 import data from "./data.js"
 import domEntries from "./entriesDOM.js"
 
+
 const events = {
 saveEntry() {    
     const date = document.getElementById("dateInput").value

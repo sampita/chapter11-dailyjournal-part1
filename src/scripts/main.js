@@ -1,15 +1,12 @@
 import data from "./data.js"
 import domEntries from "./entriesDOM.js"
 import events from "./events.js"
+import makeJournalEntryForm from "./formMaker.js"
+
+makeJournalEntryForm()
 
 data.getJournalData()
 .then(entries => domEntries.renderJournalEntriesToDom(entries))
-
-//submit button
-const submitButton = document.getElementById("submitButton")
-
-//when submit button is clicked, create new journal entry
-submitButton.addEventListener("submit", events.saveEntry)
 
 events.addRadioButtonEventListener()
 
