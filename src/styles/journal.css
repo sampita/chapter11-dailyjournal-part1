@@ -69,9 +69,11 @@ select:invalid {
     color: white;
     border: none;
     border-radius: 7px;
+    /* width: 90px; */
     height: 30px;
     margin: 20px 20px;
     font-size: 14px;
+    /* font-weight: bold; */
     /* box-shadow: 1px 1px 10px 1px #aaaaaa; */
 
 }
