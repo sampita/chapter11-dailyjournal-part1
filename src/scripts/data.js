@@ -41,6 +41,16 @@ const data = {
                 entryInput.value = entryObject.entryText
                 moodInput.value = entryObject.mood
             })
+    },
+
+    editEntry(entryID, updatedEntry) {
+        return fetch(`http://localhost:3000/entries/${entryID}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedEntry)
+        })
     }
 
 }

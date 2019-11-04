@@ -3,7 +3,7 @@
     {
       "id": 3,
       "date": "2019-10-28",
-      "concept": "JS Array Methods",
+      "concept": "JS Array Methods ****",
       "entryText": "We covered array methods in JavaScript including .find, .map, and .reduce. We also covered importing/exporting JavaScript modules instead of linking to each one in the index.html. I actually got to preview this while watching my teammates do that very same thing during the NSS Hackathon this weekend! Getting to see it ahead of time definitely primed my brain, so now that Jisie went over it in class again I fully understand it",
       "mood": "🙂 Decent level of understanding"
     },
@@ -15,11 +15,11 @@
       "id": 4
     },
     {
-      "date": "2019-10-31",
-      "concept": "Test",
-      "entryText": "Testing testing 123",
-      "mood": "😎 Feeling confident",
-      "id": 6
+      "id": 6,
+      "date": "2019-11-28",
+      "concept": "Hello",
+      "entryText": "Hey!!!",
+      "mood": "😎 Feeling confident"
     },
     {
       "date": "2019-10-31",
@@ -83,6 +83,20 @@
       "entryText": "WOOOOOOOOO",
       "mood": "😎 Feeling confident",
       "id": 16
+    },
+    {
+      "date": "2019-11-12",
+      "concept": "blalblahsdf",
+      "entryText": "jkalsdjfklas",
+      "mood": "😐 A little confused",
+      "id": 17
+    },
+    {
+      "date": "2019-10-28",
+      "concept": "JS Array Methods",
+      "entryText": "We covered array methods in JavaScript including .find, .map, and .reduce. We also covered importing/exporting JavaScript modules instead of linking to each one in the index.html. I actually got to preview this while watching my teammates do that very same thing during the NSS Hackathon this weekend! Getting to see it ahead of time definitely primed my brain, so now that Jisie went over it in class again I fully understand it",
+      "mood": "🙂 Decent level of understanding",
+      "id": 18
     }
   ]
 }

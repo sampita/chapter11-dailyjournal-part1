@@ -33,7 +33,7 @@ export default function makeJournalEntryForm() {
         </select>
     </div>    
     </fieldset>
-    <button id="submitButton">Record your thoughts</button>
+    <button id="submitButton">Save Journal Entry</button>
 </form>`
 journalEntryForm.innerHTML = journalEntryFormHTML
 

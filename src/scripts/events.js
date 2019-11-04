@@ -3,20 +3,35 @@ import domEntries from "./entriesDOM.js"
 
 
 const events = {
-    /* if id is not empty then PUT
-    
-    else if id is empty DO THESE THINGS */
-saveEntry() {
-    event.preventDefault()    
-    const date = document.getElementById("dateInput").value
-    const concept = document.getElementById("conceptInput").value
-    const entryText = document.getElementById("entryInput").value
-    const mood = document.getElementById("moodInput").value
+    saveEntry() {
+        event.preventDefault()    
+        const id = document.getElementById("entryID").value
+        const date = document.getElementById("dateInput").value
+        const concept = document.getElementById("conceptInput").value
+        const entryText = document.getElementById("entryInput").value
+        const mood = document.getElementById("moodInput").value
 
+        
+    console.log(id)    
+   if (id !== "") {
+            data.editEntry(id, {id, date, concept, entryText, mood})
+                .then(data.getJournalData)
+                .then(domEntries.renderJournalEntriesToDom)
+                .then(document.getElementById("journalForm").reset())
+        } else {
+        
+        /* if id is not empty then submit PUT request to update existing entry
 
-    data.saveEntryToApi({date, concept, entryText, mood}).then(data.getJournalData).then(domEntries.renderJournalEntriesToDom)
-    .then(document.getElementById("journalForm").reset());
-    },
+        get all entries again
+        
+        else if id is empty DO THESE THINGS */
+
+         data.saveEntryToApi({date, concept, entryText, mood})
+            .then(data.getJournalData)
+            .then(domEntries.renderJournalEntriesToDom)
+            .then(document.getElementById("journalForm").reset());
+        
+    }},
 
 saveButtonHandler() {
     //reference to submit button
@@ -85,9 +100,12 @@ editButtonHandler() {
             //Get the specific entry from API and populate form fields
             data.updateFormFields(entryToEdit)
         }
-    })
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+})
+    }
 }
 
-  }
+  
 
 export default events
